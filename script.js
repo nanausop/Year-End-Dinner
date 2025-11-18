@@ -5,7 +5,7 @@
   const REG_TARGET = new Date("2025-12-16T23:59:00+08:00").getTime();
 
   // --- CONFIG: Google Apps Script Web App URL for guest breakdown ---
-  const GUEST_API_URL = "PASTE_YOUR_WEB_APP_URL_HERE";
+  const GUEST_API_URL = "https://script.google.com/macros/s/AKfycbwjM162BwhPvh7dIzq9QXqyK9bhZt7Mcm9zQ-vGtbzyBazmeYjaXFLMYYq1QaWOp8o1YQ/exec";
 
   // Elements: Dinner
   const dinnerDays = document.getElementById("dinnerDays");
