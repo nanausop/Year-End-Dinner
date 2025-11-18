@@ -9,7 +9,7 @@
   // 2. Paste the sample code (see comment at bottom of this file).
   // 3. Deploy as a web app (Anyone with the link can access).
   // 4. Copy the deployment URL and paste it below.
-  const GUEST_API_URL = "PASTE_YOUR_WEB_APP_URL_HERE";
+  const GUEST_API_URL = "https://script.google.com/macros/s/AKfycbwjM162BwhPvh7dIzq9QXqyK9bhZt7Mcm9zQ-vGtbzyBazmeYjaXFLMYYq1QaWOp8o1YQ/exec";
 
   // Elements: Dinner
   const dinnerDays = document.getElementById("dinnerDays");
