@@ -78,7 +78,7 @@
           regMinutes,
           regSeconds,
           regStatus,
-          "Registration & payment period has ended."
+          "⛔ Registration & payment period has ended."
         );
       }
       tick();
