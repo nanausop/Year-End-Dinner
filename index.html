@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Year End Dinner Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>YEAR END DINNER BY KELAB FARMASI PKD KLANG</h1>
+    </header>
+
+    <main class="app-main">
+      <!-- Dinner Day Countdown -->
+      <section class="card countdown-card">
+        <h2>Dinner Day Countdown</h2>
+        <p class="subtitle">24 Dec 2025 • 6:30 PM • Wyndham Acmar Klang</p>
+        <div class="time-grid">
+          <div class="time-block">
+            <span id="dinnerDays" class="time-value">0</span>
+            <span class="time-label">DAYS</span>
+          </div>
+          <div class="time-block">
+            <span id="dinnerHours" class="time-value">00</span>
+            <span class="time-label">HOURS</span>
+          </div>
+          <div class="time-block">
+            <span id="dinnerMinutes" class="time-value">00</span>
+            <span class="time-label">MINUTES</span>
+          </div>
+          <div class="time-block">
+            <span id="dinnerSeconds" class="time-value">00</span>
+            <span class="time-label">SECONDS</span>
+          </div>
+        </div>
+        <p id="dinnerStatus" class="status-message">
+          Counting down to the Year End Dinner.
+        </p>
+      </section>
+
+      <!-- Registration & Payment Countdown -->
+      <section class="card countdown-card">
+        <h2>Registration &amp; Payment Countdown</h2>
+        <p class="subtitle">Registration &amp; payment open: 20 Nov 2025 – 16 Dec 2025 (11:59 PM)</p>
+        <div class="time-grid">
+          <div class="time-block">
+            <span id="regDays" class="time-value">0</span>
+            <span class="time-label">DAYS</span>
+          </div>
+          <div class="time-block">
+            <span id="regHours" class="time-value">00</span>
+            <span class="time-label">HOURS</span>
+          </div>
+          <div class="time-block">
+            <span id="regMinutes" class="time-value">00</span>
+            <span class="time-label">MINUTES</span>
+          </div>
+          <div class="time-block">
+            <span id="regSeconds" class="time-value">00</span>
+            <span class="time-label">SECONDS</span>
+          </div>
+        </div>
+        <p id="regStatus" class="status-message">
+          Time remaining for registration and payment.
+        </p>
+      </section>
+
+      <!-- Confirmed Guests (Bar Chart) -->
+      <section class="card guests-card">
+        <h2>CONFIRMED GUESTS</h2>
+        <p class="subtitle">Live breakdown from Google Sheet (Column J).</p>
+        <div class="guest-summary">
+          <span id="guestTotal" class="guest-total-number">--</span>
+          <span class="guest-total-label">TOTAL CONFIRMED</span>
+        </div>
+        <div class="chart-container">
+          <canvas id="guestChart"></canvas>
+        </div>
+        <p id="guestStatus" class="status-message small">
+          Waiting for data from Google Sheets...
+        </p>
+        <p class="hint small">
+          Data source: COUNTIF summary in Column J (one row per category).
+        </p>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <p>
+        To publish on GitHub Pages: create a repository, upload these files,
+        then enable GitHub Pages from the repository settings (branch
+        <strong>main</strong>, folder <strong>/ (root)</strong>).
+      </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
